@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Shopping Cart</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+ <h1>Your Cart</h1>
+ <a href="dashboard.html" class="cart-btn"> Back to Dashboard</a>
+ </header>
+ <main>
+ <table>
+ <thead>
+ <tr>
+ <th>Product</th>
+ <th>Price</th>
+ <th>Quantity</th>
+ <th>Total</th>
+ </tr>
+ </thead>
+ <tbody>
+ <?php while ($row = mysqli_fetch_assoc($result)): ?>
+ <tr>
+ <td><?= $row['name'] ?></td>
+ <td>$<?= $row['price'] ?></td>
+ <td><?= $row['quantity'] ?></td>
+ <td>$<?= $row['price'] * $row['quantity'] ?></td>
+ </tr>
+ <?php $total += $row['price'] * $row['quantity']; ?>
+ <?php endwhile; ?>
+ </tbody>
+ </table>
+ <h2>Total: $<?= $total ?></h2>
+ </main>
+</body>
+</html>

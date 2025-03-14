@@ -1,0 +1,204 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+   }
+   /* Side navigation styling */
+   .side-nav {
+    height: 100%;
+    width: 0; /* Start with 0 width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s; /* Smooth slide transition */
+    padding-top: 60px; /* Space for content below the header */
+   }
+   .side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+   }
+   .side-nav a:hover {
+    color: #f1f1f1;
+   }
+   /* Close button inside the navigation */
+   .side-nav .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+   }
+   /* Open button styling */
+   .open-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+   }
+   .open-btn:hover {
+    background-color: #444;
+   }
+   /* Main content styling */
+   .content {
+    padding: 20px;
+    margin-left: 20px;
+   }
+
+   header {
+    background: #0e2315;
+    color: #654f4f;
+    padding: 10px 20px;
+    text-align: center;
+   }
+
+   navbox {
+    box-sizing: border-box;
+    background-color: #840825;
+   }
+
+
+   nav ul {
+    list-style: none;
+    padding: 0;
+   }
+   nav ul li {
+    display: inline;
+    margin: 0 15px;
+   }
+   nav a {
+    color: white;
+    text-decoration: none;
+   }
+   main {
+    padding: 20px;
+   }
+   .post {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px 0;
+   }
+   ul li a {
+    background-color: none;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+   }
+   button {
+    background: #840825;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+   }
+   #cart {
+    display: none;
+   }
+
+   #watcybox {
+    border: 10px;
+    border-radius: 19px;
+    border-color: black;
+
+    box-sizing: border-box;
+   }
+
+   #navlogo {
+    text-align: left;
+    text-decoration: none;
+    position: up;
+    align-items: lefttop;
+    position: absolute;
+
+   }
+
+    .signup  {
+    background-color: rgb(237, 237, 247);
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin-left: 1000px;
+   }
+
+
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+   }
+   header .cart {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   2header h1 {
+    margin: 0;
+   }
+   .cart-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+   }
+   .cart-btn:hover {
+    text-decoration: underline;
+   }
+   /* Product List */
+   #product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+   }
+   .product-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   }
+   .product-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+   }
+   .product-box h3 {
+    margin: 10px 0;
+    font-size: 18px;
+   }
+   .product-box p {
+    color: #777;
+    font-size: 14px;
+   }
+   .product-box button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   .product-box button:hover {
+    background-color: #4cae4c;
+   }
